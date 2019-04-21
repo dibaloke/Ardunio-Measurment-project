@@ -101,10 +101,12 @@ for(int i=0;i<password_length;i++){// second for loop starts
                
                if(i==(password_length-1)&& password_matched==false ){
                 password_matched=false;
+                Serial.println("Inside Bug");
                }
 
                else{
                password_matched=true;
+               Serial.println("Bug");
                }
                //Bug
                
@@ -135,7 +137,7 @@ for(int i=0;i<password_length;i++){// second for loop starts
 
 if(password_matched==true && attempt<=accepted_no_of_attempt){
   
-   Serial.println("Welcome Home Kayes");
+   Serial.println("Welcome Home");
   
   }
  
